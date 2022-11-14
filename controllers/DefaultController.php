@@ -7,7 +7,6 @@
 
 namespace sadi01\swagger\controllers;
 
-
 use yii\helpers\Url;
 use yii\web\Controller;
 use yii\web\Response;
@@ -18,7 +17,6 @@ use yii\web\Response;
  */
 class DefaultController extends Controller
 {
-
     /**
      * @return string
      */
@@ -38,25 +36,23 @@ class DefaultController extends Controller
         return $this->getContent();
     }
 
-
     public function getContent()
     {
         $content = '';
         if ($this->module->path) {
             $path = \Yii::getAlias($this->module->path);
-            $content = \Swagger\scan($path);
+            $content = \OpenApi\Generator::scan([$path]);
         }
+
         if ($this->module->url) {
             $content = file_get_contents($this->module->url);
         }
-
 
         if (is_callable($this->module->afterRender)) {
             $content = call_user_func($this->module->afterRender, $content);
         }
 
-
-        return $content;
+        header('Content-Type: application/json');
+        return $content->toJson();
     }
-
 }
