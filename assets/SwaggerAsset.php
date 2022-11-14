@@ -1,5 +1,5 @@
 <?php
-namespace ignatenkovnikita\swagger\assets;
+namespace sadi01\swagger\assets;
 
 
 use yii\web\AssetBundle;

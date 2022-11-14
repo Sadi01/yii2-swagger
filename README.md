@@ -21,13 +21,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require ignatenkovnikita/yii2-swagger:dev-master
+php composer.phar require sadi01/yii2-swagger:dev-master
 ```
 
 or add
 
 ```
-"ignatenkovnikita/yii2-swagger": "dev-master"
+"sadi01/yii2-swagger": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -44,7 +44,7 @@ You set url, where locate json file OR set path for scan
 'modules' => [
       ...
       'swagger' => [
-            'class' => \ignatenkovnikita\swagger\Module::class,
+            'class' => \sadi01\swagger\Module::class,
         //  'url' => 'http://petstore.swagger.io/v2/swagger.json',
             'path' => '@frontend/modules/api',
             // disable page with your logic

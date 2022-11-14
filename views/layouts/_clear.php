@@ -4,7 +4,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-$bundle = \ignatenkovnikita\swagger\assets\SwaggerAsset::register($this);
+$bundle = \sadi01\swagger\assets\SwaggerAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 

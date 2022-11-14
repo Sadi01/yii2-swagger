@@ -1,6 +1,6 @@
 <?php
 
-namespace ignatenkovnikita\swagger;
+namespace sadi01\swagger;
 
 
 use yii\base\InvalidConfigException;
@@ -9,7 +9,7 @@ use yii\web\HttpException;
 
 /**
  * Class Module
- * @package ignatenkovnikita\swagger
+ * @package sadi01\swagger
  */
 class Module extends \yii\base\Module
 {
@@ -45,7 +45,7 @@ class Module extends \yii\base\Module
     /**
      * @var string
      */
-    public $controllerNamespace = 'ignatenkovnikita\swagger\controllers';
+    public $controllerNamespace = 'sadi01\swagger\controllers';
 
     /**
      * @throws InvalidConfigException

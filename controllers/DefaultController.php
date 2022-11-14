@@ -5,7 +5,7 @@
  * Web Site: http://IgnatenkovNikita.ru
  */
 
-namespace ignatenkovnikita\swagger\controllers;
+namespace sadi01\swagger\controllers;
 
 
 use yii\helpers\Url;
@@ -14,7 +14,7 @@ use yii\web\Response;
 
 /**
  * Class DefaultController
- * @package ignatenkovnikita\swagger\controllers
+ * @package sadi01\swagger\controllers
  */
 class DefaultController extends Controller
 {
